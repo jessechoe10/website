@@ -15,4 +15,10 @@ export default {
     },
   },
   plugins: [],
+  // Ensure Tailwind processes all classes even in production
+  safelist: [
+    {
+      pattern: /./, // This will include all classes
+    },
+  ],
 } satisfies Config;
